@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MMGenre is a benchmark for diagnosing singing voice synthesis across multiple musical genres.">
+  <title>MMGenre | Multi-Genre Singing Voice Synthesis Benchmark</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Libre+Franklin:wght@600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <aside class="sidebar" aria-label="Page navigation">
+    <a class="brand" href="#overview" aria-label="MMGenre home">
+      <span class="brand-mark">M</span>
+      <span>MMGenre</span>
+    </a>
+    <nav>
+      <a class="nav-link active" href="#overview"><span aria-hidden="true">✦</span> Overview</a>
+      <a class="nav-link" href="#examples"><span aria-hidden="true">♫</span> Examples</a>
+      <a class="nav-link" href="#collapse"><span aria-hidden="true">◉</span> Genre Collapse</a>
+      <a class="nav-link" href="#citation"><span aria-hidden="true">❝</span> Citation</a>
+    </nav>
+    <p class="sidebar-note">Accepted at<br><strong>Interspeech 2026</strong></p>
+  </aside>
+
+  <header class="mobile-header">
+    <a class="brand" href="#overview"><span class="brand-mark">M</span><span>MMGenre</span></a>
+    <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation">
+      <a href="#overview">✦ Overview</a>
+      <a href="#examples">♫ Examples</a>
+      <a href="#collapse">◉ Genre Collapse</a>
+      <a href="#citation">❝ Citation</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="overview" class="hero section">
+      <div class="eyebrow"><span></span> Multi-Genre SVS Benchmark</div>
+      <h1>MMGenre</h1>
+      <p class="subtitle">Benchmarking Singing Voice Synthesis across Multiple Musical Genres</p>
+      <p class="lead">
+        MMGenre is a diagnostic benchmark for studying how singing voice synthesis systems behave across diverse musical genres.
+        It combines genre-aligned music scores with broad genre coverage to expose limited genre discrimination in current systems.
+      </p>
+
+      <div class="resource-links" aria-label="Project resources">
+        <span class="resource-link disabled" aria-disabled="true" title="Link coming soon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7a12 12 0 0 0-3.8 23.4c.6.1.8-.2.8-.6v-2.3c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.8.1-.8 1.3.1 2 1.3 2 1.3 1.1 2 3 1.4 3.7 1.1.1-.8.4-1.4.8-1.7-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C17 5.8 18 6.1 18 6.1c.7 1.7.3 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3c0 .4.2.7.8.6A12 12 0 0 0 12 .7Z"/></svg>
+          GitHub
+        </span>
+        <span class="resource-link disabled" aria-disabled="true" title="Link coming soon">
+          <span class="hf-logo" aria-hidden="true">🤗</span> Dataset
+        </span>
+        <span class="resource-link disabled" aria-disabled="true" title="Link coming soon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.2 2.8h2.6l5.3 9.4-4 7H4.5l5-8.6-6.3-7.8Zm15.5 0h-2.6l-8 14.2 1.3 2.2h2.5l8-14.2-1.2-2.2Zm-4.5 8.8-1.3 2.2 3 5.4h2.6l-4.3-7.6Z"/></svg>
+          arXiv
+        </span>
+      </div>
+
+      <div class="stats" aria-label="Dataset summary">
+        <article class="stat-card"><strong>10</strong><span>Major Genres</span></article>
+        <article class="stat-card"><strong>27</strong><span>Subgenres</span></article>
+        <article class="stat-card"><strong>2.5K+</strong><span>Genre-Aligned Scores</span></article>
+      </div>
+
+      <div class="figure-card overview-figure">
+        <div class="figure-copy">
+          <span class="figure-number">Figure 01</span>
+          <h2>A broad musical taxonomy</h2>
+          <p>MMGenre spans ten major genres and twenty-seven subgenres, enabling controlled analysis at multiple levels of musical specificity.</p>
+        </div>
+        <img src="assets/images/genre-subgenre-sunburst.png" alt="Sunburst chart showing MMGenre's ten genres and twenty-seven subgenres">
+      </div>
+    </section>
+
+    <section id="examples" class="section">
+      <div class="section-heading">
+        <span class="section-index">02</span>
+        <div>
+          <p class="kicker">Explore the benchmark</p>
+          <h2>Genre-Aligned Examples</h2>
+          <p>Each example pairs a vocal segment with its genre label, subgenre label, lyrics, and a compact pitch-duration score.</p>
+        </div>
+      </div>
+
+      <div id="genre-tabs" class="genre-tabs" role="tablist" aria-label="Select a genre"></div>
+      <article class="example-card" aria-live="polite">
+        <div class="example-header">
+          <div>
+            <p class="kicker">Selected sample</p>
+            <h3 id="sample-genre"></h3>
+          </div>
+          <span id="sample-subgenre" class="subgenre-pill"></span>
+        </div>
+        <div class="sample-grid">
+          <div class="sample-detail">
+            <span class="detail-label">Lyrics</span>
+            <p id="sample-lyrics" class="lyrics" lang="zh-CN"></p>
+          </div>
+          <div class="sample-detail">
+            <span class="detail-label">Ground Truth Vocal</span>
+            <audio id="sample-audio" controls preload="none"></audio>
+          </div>
+        </div>
+        <div class="score-panel">
+          <div class="score-label">
+            <span class="detail-label">Genre-Aligned Score</span>
+            <span>pitch ↑ · time →</span>
+          </div>
+          <div id="score-visual" class="score-visual" role="img"></div>
+        </div>
+      </article>
+    </section>
+
+    <section id="collapse" class="section">
+      <div class="section-heading">
+        <span class="section-index">03</span>
+        <div>
+          <p class="kicker">A key finding</p>
+          <h2>Genre Collapse in SVS</h2>
+          <p>Current SVS systems often produce vocals with highly similar acoustic characteristics across genres, resulting in weak genre separability.</p>
+        </div>
+      </div>
+
+      <div class="collapse-grid">
+        <div class="figure-card radar-card">
+          <span class="figure-number">Figure 02</span>
+          <img src="assets/images/genre-align-radar.png" alt="Radar chart comparing genre alignment across singing voice synthesis models">
+        </div>
+        <div class="finding-card">
+          <span class="finding-mark">“</span>
+          <h3>Different scores.<br>Similar voices.</h3>
+          <p>
+            Despite receiving genre-aligned scores, synthesized vocals tend to converge toward a shared acoustic profile.
+            Listen below to compare Suno ground truth with VISinger2 across all ten genres.
+          </p>
+          <div class="finding-rule"></div>
+          <p class="finding-note">Zero-shot adaptation offers only marginal gains, while lightweight genre-specific continued training is substantially more effective.</p>
+        </div>
+      </div>
+
+      <div id="comparison-grid" class="comparison-grid"></div>
+    </section>
+
+    <section id="citation" class="section citation-section">
+      <div class="section-heading">
+        <span class="section-index">04</span>
+        <div>
+          <p class="kicker">Publication</p>
+          <h2>Citation</h2>
+        </div>
+      </div>
+      <div class="acceptance-card">
+        <span class="acceptance-icon" aria-hidden="true">✓</span>
+        <div>
+          <h3>Accepted at Interspeech 2026</h3>
+          <p>Formal citation details and project links will be added upon publication.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <strong>MMGenre</strong>
+      <span>Multi-Genre Singing Voice Synthesis Benchmark · 2026</span>
+    </footer>
+  </main>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
