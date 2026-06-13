@@ -147,8 +147,10 @@ h1 { margin-bottom: 12px; font-size: clamp(72px, 11vw, 146px); }
   box-shadow: 0 4px 14px rgba(31, 47, 68, .04);
   font-size: 13px;
   font-weight: 600;
+  text-decoration: none;
 }
 .resource-link svg { width: 17px; height: 17px; fill: currentColor; }
+.resource-link:not(.disabled):hover { color: var(--accent); border-color: #b7cce2; }
 .resource-link.disabled { color: #8994a3; cursor: not-allowed; }
 .hf-logo { filter: grayscale(1); font-size: 15px; }
 .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
