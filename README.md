@@ -4,7 +4,7 @@ Static GitHub Pages website for **MMGenre: Benchmarking Singing Voice Synthesis 
 
 ## 🌐 Live Demo
 
-[Explore the MMGenre demo](https://fengjin1117.github.io/mmgenre-demo/)
+[Explore the MMGenre website](https://fengjin1117.github.io/mmgenre/)
 
 ## 🤗 Dataset
 
@@ -12,7 +12,6 @@ Static GitHub Pages website for **MMGenre: Benchmarking Singing Voice Synthesis 
 
 ## 🚧 TODO
 
-- Add the GitHub code repository link.
 - Expand examples to cover all 27 subgenres.
 - Add the formal citation after publication.
 
