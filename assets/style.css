@@ -281,6 +281,7 @@ audio { width: 100%; min-height: 40px; }
 .acceptance-icon { flex: 0 0 auto; width: 45px; height: 45px; display: grid; place-items: center; color: white; background: var(--accent); border-radius: 50%; font-size: 21px; }
 .acceptance-card h3 { margin-bottom: 6px; font-size: 22px; }
 .acceptance-card p { margin: 0; color: var(--muted); font-size: 14px; }
+.citation-code { margin: 16px 0 0; padding: 24px 28px; overflow-x: auto; color: #dce7f2; background: var(--ink); border-radius: 13px; font: 13px/1.7 monospace; white-space: pre; }
 footer { max-width: 1092px; margin: 0 auto; padding: 30px 64px 50px; display: flex; justify-content: space-between; gap: 20px; color: var(--muted); border-top: 1px solid var(--line); font-size: 11px; }
 footer strong { color: var(--ink); }
 

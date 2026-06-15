@@ -13,7 +13,19 @@ Static GitHub Pages website for **MMGenre: Benchmarking Singing Voice Synthesis 
 ## 🚧 TODO
 
 - Expand examples to cover all 27 subgenres.
-- Add the formal citation after publication.
+
+## Citation
+
+If you find MMGenre useful, please cite:
+
+```bibtex
+@inproceedings{feng2026mmgenre,
+  title={MMGenre: A Benchmark for Diagnosing Multi-Genre Singing Voice Synthesis},
+  author={Feng, Wenhao and Tang, Yuxun and Shi, Jiatong and Jin, Qin},
+  booktitle={Proceedings of Interspeech 2026},
+  year={2026}
+}
+```
 
 ## Assets
 
