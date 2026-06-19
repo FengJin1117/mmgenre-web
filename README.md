@@ -20,7 +20,7 @@ If you find MMGenre useful, please cite:
 
 ```bibtex
 @inproceedings{feng2026mmgenre,
-  title={MMGenre: A Benchmark for Diagnosing Multi-Genre Singing Voice Synthesis},
+  title={MMGenre: Benchmarking Singing Voice Synthesis across Multiple Musical Genres},
   author={Feng, Wenhao and Tang, Yuxun and Shi, Jiatong and Jin, Qin},
   booktitle={Proceedings of Interspeech 2026},
   year={2026}
